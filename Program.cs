@@ -30,7 +30,6 @@ var host = Host.CreateDefaultBuilder(args)
             provider =>
                 provider.GetRequiredService<ApiPlugin>());
 
-        // Monitor Manager
         services.AddSingleton<MonitorManager>();
     })
     .Build();
